@@ -3,7 +3,7 @@ import _ from 'underscore';
 /* import {crearDeck} from './usecases/crear-deck';//no es necesario poner la extension.js es totalmente opcional.
 import {pedirCarta} from './usecases/pedir-carta';
 import {valorCarta} from './usecases/valor-carta' */
-import {crearDeck, pedirCarta, valorCarta, turnoComputadora, crearCartaHTML} from './usecases'//Esto fue gracias al archivo de barril, ese archivo se debe llamar index.
+import { crearDeck, pedirCarta, valorCarta, turnoComputadora, crearCartaHTML } from './usecases'//Esto fue gracias al archivo de barril, ese archivo se debe llamar index.
 
 
 
@@ -24,15 +24,6 @@ const puntosHTML = document.querySelectorAll('small');//Aqui estamos buscando po
 
 
 deck = crearDeck( tipos, especiales );//Uso el retorno de la baraja para trabajar con ella.
-
-
-
-
-
-
-
-/* const valorDevuelto = valorCarta( pedirCarta() );
-console.log({ valorDevuelto }); */
 
 //Eventos
 btnPedir.addEventListener('click',() => {
